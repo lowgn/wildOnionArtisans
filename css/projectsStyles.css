@@ -1,0 +1,82 @@
+
+body, html {
+	height: 100%;
+}
+
+/* section heights*/
+
+#bgImage {
+	
+	background-image:url('../images/background/projectBack.jpg'); 
+	background-size: 100% 110%; 
+	height: 87vh;
+	width: 100%;
+}
+
+.plantArt {
+	visibility:hidden;
+}
+
+#functional1{
+    position: relative; /* Ensures the carousel and the background relate to this container */
+    background-image: url('../images/plant2.png'); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-position: right ; /* Position the image to the bottom-right corner */
+    background-size: 35%; /* Adjust as needed to fit your design */
+    padding-right: 300px; /* Adjust [Value] to how much you want the image to peek out */
+}
+
+#functional2{
+    position: relative; /* Ensures the carousel and the background relate to this container */
+    background-image: url('../images/plant5.png'); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-position: right ; /* Position the image to the bottom-right corner */
+    background-size: 42%; /* Adjust as needed to fit your design */
+    padding-right: 300px; /* Adjust [Value] to how much you want the image to peek out */
+}
+
+#functional3{
+    position: relative; /* Ensures the carousel and the background relate to this container */
+    background-image: url('../images/plant1.png'); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-position: right ; /* Position the image to the bottom-right corner */
+    background-size: 42%; /* Adjust as needed to fit your design */
+    padding-right: 300px; /* Adjust [Value] to how much you want the image to peek out */
+}
+
+#carousel {
+    position: relative;
+    z-index: 2; /* This ensures the carousel is displayed on top of the background image */
+}
+
+@media only screen and (max-width: 1120px) {
+	
+	#bgImage {
+	background-image:url('../images/background/projectBack.jpg'); 
+	background-size: cover; 
+	height: 85vh;
+	width: 100%;
+	}
+	
+	#functional1{
+		background-image: none; 
+        padding-right: 10px;
+	}
+
+	#functional2{
+		background-image: none; 
+        padding-right: 10px;
+	}
+
+	#functional3{
+		background-image: none; 
+        padding-right: 10px;
+	}
+	
+	.plantArt {
+	visibility:visible;
+	}
+	
+
+}
+
